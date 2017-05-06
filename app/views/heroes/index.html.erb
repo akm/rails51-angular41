@@ -1,6 +1,13 @@
 <h1>Heroes#index</h1>
 <p>Find me in app/views/heroes/index.html.erb</p>
 
-<hello-angular>Loading...</hello-angular>
 
-<%= javascript_pack_tag 'hello_angular' %>
+<my-app>Loading AppComponent content here ...</my-app>
+
+<script src="/assets/core-js/client/shim.min.js"></script>
+<script src="/assets/zone.js/dist/zone.js"></script>
+<script src="/assets/systemjs/dist/system.src.js"></script>
+<script src="/systemjs.config.js"></script>
+
+<%= javascript_pack_tag 'tour_of_heroes' %>
+
