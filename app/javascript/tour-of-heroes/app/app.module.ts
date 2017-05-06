@@ -2,6 +2,7 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }   from '@angular/forms';
 import { HttpModule }    from '@angular/http';
+import { APP_BASE_HREF } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -32,7 +33,8 @@ import { HeroSearchComponent } from './hero-search.component';
         HeroSearchComponent
     ],
     providers: [
-        HeroService
+        HeroService,
+        { provide: APP_BASE_HREF, useValue: '/heroes/index' }
     ],
     bootstrap:    [ AppComponent ]
 })
