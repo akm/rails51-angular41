@@ -1,24 +1,31 @@
-# README
+# Rails 5.1 + Angular 4.1 example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Versions
 
-Things you may want to cover:
+| Name | Version |
+|-------|------------|
+| ruby    | 2.4.1   |
+| rails   | 5.1.0   |
+| node.js | v6.10.3 |
+| npm     | 3.10.10 |
+| yarn    | v0.23.4 |
 
-* Ruby version
+## Run in development mode
 
-* System dependencies
 
-* Configuration
+### Terminal A
 
-* Database creation
+```bash
+$ cd path/to/rails51-sandbox1
+$ bin/webpack-dev-server
+```
 
-* Database initialization
+### Terminal B
 
-* How to run the test suite
+```bash
+$ cd path/to/rails51-sandbox1
+$ bin/rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+open http://localhost:3000/heroes/index/ NOT http://localhost:3000/heroes/index .
+Don't forget the last slash of the URL.
