@@ -1,0 +1,1 @@
+require('../tour-of-heroes')
